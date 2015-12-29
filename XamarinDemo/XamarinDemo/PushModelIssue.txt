@@ -1,0 +1,12 @@
+﻿Requirements:
+LoginPopUp page should open as a model page in Xamarin from Native code or PCl code.
+
+Issue: LoginPopUp is opened in background of current activity in android, rather then on top of it.
+
+Steps to reproduce:
+1. Open XamarinDemo.Droid project in Android emulator/device
+2. Click on "OpenLogin Model" button, it will open model popup - works fine on Xmarin PCL
+3. Close the model popup
+4. Click on 'Open Native Activity' This will Start and open an activity defined in Native Xmarin.Android project
+5. Click on button there, to open Login Model window. Now this opens the popup but in behind of current activity.
+   If you back press of current activity, you will see the Popup is opened. Same can be seen from Debug log for Login popup.
